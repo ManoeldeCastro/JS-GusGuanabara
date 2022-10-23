@@ -1,0 +1,40 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: rgb(242, 136, 110);
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  margin: 30px;
+}
+section {
+  color: black;
+  background-color: white;
+  width: 60vw;
+  height: 60vh;
+  max-width: 1000px;
+  min-height: 400px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.374);
+  position: relative;
+  margin: auto;
+}
+img {
+  width: 20vw;
+  height: 20vw;
+  min-width: 250px;
+  min-height: 250px;
+  border-radius: 50%;
+}
+section > div > p {
+  font: normal 14pt arial;
+  padding: 40px;
+}
+footer {
+  font-style: italic;
+  margin: 20px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de localidade</title>
+  </head>
+  <body>
+    <h1>Sistema de localidade</h1>
+    <label for="país">Seu País</label>
+    <input type="text" id="pais" />
+    <input type="button" value="Buscar" id="buscar" />
+    <div id="res"></div>
+  </body>
+  <script>
+    var buscar = document.querySelector("input#buscar")
+    buscar.addEventListener("mouseenter", () => {
+      var pais = document.getElementById("pais").value
+      var res = document.getElementById("res")
+      res.innerHTML = "<p>Você nasceu no " + pais + " !</p>"
+      if (pais == "Brasil" || pais == "brasil") {
+        res.innerHTML += `<p>Você é Brasileiro!</p>`
+      } else {
+        res.innerHTML += `<p>Você é Estrangeiro!</p>`
+      }
+    })
+  </script>
+</html>
