@@ -1,6 +1,6 @@
 var td = "Tudo bem?"
 
-while (((i = 0), i < 6)) {
+while (var i = 1, i <= 6) {
   console.log(td)
   i++
 }
