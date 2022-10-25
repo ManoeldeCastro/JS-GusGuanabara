@@ -7,4 +7,4 @@ while (i <= 6) {
 
 do {
   console.log(`${i} ${td}`)
-} while (i < 12)
+} while (i <= 12)
