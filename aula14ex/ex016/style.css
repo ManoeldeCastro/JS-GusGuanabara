@@ -1,0 +1,45 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: rgb(110, 130, 242);
+  color: white;
+  text-align: center;
+  font: normal 16pt Arial;
+}
+h1 {
+  margin: 30px;
+}
+
+section {
+  color: black;
+  background-color: white;
+  width: 60vw;
+  text-align: left;
+  max-width: 1000px;
+  min-height: 200px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.374);
+  position: relative;
+  margin: auto;
+  padding: 25px;
+}
+label,
+input {
+  margin: 10px 0px 10px 0px;
+}
+input#contar {
+  padding: 5px 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.567);
+}
+input#contar:active {
+  top: 2px;
+  box-shadow: none;
+  transition: 0.5s;
+}
+
+footer {
+  font-style: italic;
+  margin: 20px;
+}
