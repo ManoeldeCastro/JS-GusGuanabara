@@ -11,12 +11,14 @@ contar.addEventListener("click", () => {
 
   //linha 11 - adicionei o texto no paragrafo
   var resto = (fim - inicio) % passos
+
   console.log(resto)
   var contando = () => {
     for (inicio; inicio <= fim; inicio += passos) {
-      conta.innerHTML += ` ${inicio} > `
+      conta.innerHTML += ` ${inicio} \u{1f449} `
     }
-    conta.innerHTML += `Restam: ${resto} Passos`
+    conta.innerHTML += `${fim} \u{1f3c1}`
+    conta.innerHTML += `Restam: ${Math.abs(fim - inicio)} Passos`
   }
   //linhas 13 a 17 - Criei uma função onde vai ser executado o Laço
   //o for esta contendo a variável inicio como inicialização, as variáveis inicio e fim como condição, e a variável passos como incremento para inicio
