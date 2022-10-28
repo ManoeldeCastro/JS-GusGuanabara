@@ -1,8 +1,8 @@
-var g = (n) => {
-  var h = n
-  for (j = n; j <= 0; j--) {
-    h += j * n
+var g = (numero) => {
+  if (numero == 1) {
+    return 1
+  } else {
+    return numero * g(numero - 1)
   }
-  return h
 }
-console.log(g(6))
+console.log(g(5))
